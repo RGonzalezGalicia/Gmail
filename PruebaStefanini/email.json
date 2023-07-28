@@ -1,0 +1,14 @@
+{
+  "correos": [
+    {
+      "emisor": "juan",
+      "correoEmisor": "jperez@gmail.com",
+      "asunto": "Tarea primer Parcial",
+      "mensaje": "texto texto texto",
+      "hora": "10:00 am",
+      "leido": true,
+      "destacado": true,
+      "spam": false
+    }
+  ]
+}
