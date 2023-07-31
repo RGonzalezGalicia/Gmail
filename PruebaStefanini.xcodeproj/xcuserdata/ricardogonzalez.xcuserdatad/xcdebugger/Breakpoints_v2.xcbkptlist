@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "22DB4680-B91C-426D-BC26-46FD55F75994"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76AFED01-B08B-45BB-994B-ECC1748C6A97"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaStefanini/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "mockEmail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "76AFED01-B08B-45BB-994B-ECC1748C6A97 - a7d10947d550a8c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaStefanini.ViewController.mockEmail() -&gt; Swift.Optional&lt;PruebaStefanini.EmailResponse&gt;"
+                  moduleName = "PruebaStefanini"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ricardogonzalez/Desktop/PruebaStefanini/PruebaStefanini/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "76AFED01-B08B-45BB-994B-ECC1748C6A97 - a7d10947d550a8c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaStefanini.ViewController.mockEmail() -&gt; Swift.Optional&lt;PruebaStefanini.EmailResponse&gt;"
+                  moduleName = "PruebaStefanini"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ricardogonzalez/Desktop/PruebaStefanini/PruebaStefanini/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+               <Location
+                  uuid = "76AFED01-B08B-45BB-994B-ECC1748C6A97 - a7d10947d550a8c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaStefanini.ViewController.mockEmail() -&gt; Swift.Optional&lt;PruebaStefanini.EmailResponse&gt;"
+                  moduleName = "PruebaStefanini"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ricardogonzalez/Desktop/PruebaStefanini/PruebaStefanini/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1056">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2A0CAD0-5A39-4015-9CDB-AC2282DD1EBD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaStefanini/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "mockEmail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2A0CAD0-5A39-4015-9CDB-AC2282DD1EBD - a7d10947d550a822"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaStefanini.ViewController.mockEmail() -&gt; Swift.Optional&lt;PruebaStefanini.EmailResponse&gt;"
+                  moduleName = "PruebaStefanini"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ricardogonzalez/Desktop/PruebaStefanini/PruebaStefanini/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "E2A0CAD0-5A39-4015-9CDB-AC2282DD1EBD - a7d10947d550a822"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaStefanini.ViewController.mockEmail() -&gt; Swift.Optional&lt;PruebaStefanini.EmailResponse&gt;"
+                  moduleName = "PruebaStefanini"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ricardogonzalez/Desktop/PruebaStefanini/PruebaStefanini/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "896">
+               </Location>
+               <Location
+                  uuid = "E2A0CAD0-5A39-4015-9CDB-AC2282DD1EBD - a7d10947d550a822"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaStefanini.ViewController.mockEmail() -&gt; Swift.Optional&lt;PruebaStefanini.EmailResponse&gt;"
+                  moduleName = "PruebaStefanini"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ricardogonzalez/Desktop/PruebaStefanini/PruebaStefanini/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "876">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

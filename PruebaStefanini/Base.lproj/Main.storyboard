@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c5p-ht-32B">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GMAIL-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PruebaStefanini" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,16 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar correo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89b-Md-BD3">
-                                <rect key="frame" x="15" y="79" width="363" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="g3J-fM-VNu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTw-wz-cap">
+                                <rect key="frame" x="15" y="118" width="363" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar correo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89b-Md-BD3">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="g3J-fM-VNu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iPV-qP-222">
-                                <rect key="frame" x="10" y="144" width="373" height="708"/>
+                                <rect key="frame" x="10" y="183" width="373" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="vqH-pV-ZFx">
@@ -43,14 +48,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iPV-qP-222" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0SU-8O-1zE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="89b-Md-BD3" secondAttribute="trailing" constant="15" id="34c-vC-pVi"/>
-                            <constraint firstItem="iPV-qP-222" firstAttribute="top" secondItem="89b-Md-BD3" secondAttribute="bottom" constant="15" id="6WB-kG-aHg"/>
-                            <constraint firstItem="89b-Md-BD3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="UhM-yN-nyF"/>
-                            <constraint firstItem="89b-Md-BD3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VBg-Id-LzH"/>
+                            <constraint firstItem="GTw-wz-cap" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3w8-OU-sG2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GTw-wz-cap" secondAttribute="trailing" constant="15" id="IV5-rB-r0i"/>
+                            <constraint firstItem="GTw-wz-cap" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="IXS-LV-4nK"/>
+                            <constraint firstItem="iPV-qP-222" firstAttribute="top" secondItem="GTw-wz-cap" secondAttribute="bottom" constant="15" id="fVy-bM-Ulv"/>
                             <constraint firstItem="iPV-qP-222" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="iZF-QB-zsl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="iPV-qP-222" secondAttribute="bottom" constant="-34" id="mNx-tq-cDU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="GMAIL" id="pAt-R4-Ibj">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="bVK-zK-g8F">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IZZ-p1-Udv">
+                                <rect key="frame" x="16" y="0.0" width="51" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal" catalog="system"/>
+                                <connections>
+                                    <action selector="menuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khr-hk-4vR"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="buscador" destination="89b-Md-BD3" id="h81-tr-mg4"/>
                         <outlet property="emailsTable" destination="iPV-qP-222" id="P53-cq-Nzt"/>
@@ -58,12 +76,193 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="882" y="5"/>
+        </scene>
+        <!--Destacados View Controller-->
+        <scene sceneID="AOp-ty-o2N">
+            <objects>
+                <viewController storyboardIdentifier="DestacadosViewController" id="pyH-bp-CKl" customClass="DestacadosViewController" customModule="PruebaStefanini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ehi-jj-1os">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e6i-Jy-zmY">
+                                <rect key="frame" x="10" y="109" width="373" height="743"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G5-1e-JEc">
+                                <rect key="frame" x="5" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Lbh-v7-Qhu"/>
+                                    <constraint firstAttribute="width" constant="45" id="grI-2q-Lfn"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="backButton:" destination="pyH-bp-CKl" eventType="touchUpInside" id="5MP-EL-ruI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bOL-I1-ggl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1G5-1e-JEc" firstAttribute="top" secondItem="bOL-I1-ggl" secondAttribute="top" constant="5" id="1tw-Uc-c6K"/>
+                            <constraint firstItem="e6i-Jy-zmY" firstAttribute="leading" secondItem="bOL-I1-ggl" secondAttribute="leading" constant="10" id="2gp-QN-4eE"/>
+                            <constraint firstItem="1G5-1e-JEc" firstAttribute="leading" secondItem="bOL-I1-ggl" secondAttribute="leading" constant="5" id="3rQ-iR-7Qn"/>
+                            <constraint firstItem="e6i-Jy-zmY" firstAttribute="top" secondItem="bOL-I1-ggl" secondAttribute="top" constant="50" id="UE3-WO-BOE"/>
+                            <constraint firstItem="e6i-Jy-zmY" firstAttribute="trailing" secondItem="bOL-I1-ggl" secondAttribute="trailing" constant="-10" id="YBa-8B-gwt"/>
+                            <constraint firstAttribute="bottom" secondItem="e6i-Jy-zmY" secondAttribute="bottom" id="g89-DK-2RN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="destacadosTable" destination="e6i-Jy-zmY" id="X43-At-yXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOP-Er-XTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.9465648854962" y="-661.26760563380287"/>
+        </scene>
+        <!--Papelera View Controller-->
+        <scene sceneID="DNg-bU-Kqw">
+            <objects>
+                <viewController storyboardIdentifier="PapeleraViewController" id="whs-1E-DuL" customClass="PapeleraViewController" customModule="PruebaStefanini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RYk-7s-MaY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDA-MC-OTh">
+                                <rect key="frame" x="5" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="bda-wz-fMN"/>
+                                    <constraint firstAttribute="height" constant="45" id="qRl-w0-3kv"/>
+                                </constraints>
+                                <color key="tintColor" red="0.80050617459999995" green="0.23345559839999999" blue="0.23070770500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                    <color key="baseForegroundColor" red="0.80050617459999995" green="0.23345559839999999" blue="0.23070770500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="whs-1E-DuL" eventType="touchUpInside" id="Xf6-rJ-WuP"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IeZ-ps-3GN">
+                                <rect key="frame" x="10" y="121" width="373" height="731"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="VGW-Ac-rwB">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VGW-Ac-rwB" id="2Pp-cz-kC3">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fx7-gV-9Ce"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fDA-MC-OTh" firstAttribute="top" secondItem="Fx7-gV-9Ce" secondAttribute="top" constant="5" id="IIL-yW-18a"/>
+                            <constraint firstAttribute="bottom" secondItem="IeZ-ps-3GN" secondAttribute="bottom" id="T49-mD-3Ea"/>
+                            <constraint firstItem="fDA-MC-OTh" firstAttribute="leading" secondItem="Fx7-gV-9Ce" secondAttribute="leading" constant="5" id="f0f-ek-oft"/>
+                            <constraint firstItem="IeZ-ps-3GN" firstAttribute="top" secondItem="Fx7-gV-9Ce" secondAttribute="top" constant="62" id="fYz-a7-w6P"/>
+                            <constraint firstItem="IeZ-ps-3GN" firstAttribute="trailing" secondItem="Fx7-gV-9Ce" secondAttribute="trailing" constant="-10" id="pgB-ba-wAk"/>
+                            <constraint firstItem="IeZ-ps-3GN" firstAttribute="leading" secondItem="Fx7-gV-9Ce" secondAttribute="leading" constant="10" id="tVi-bg-aKS"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xbK-k1-BZo">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="f1g-Pi-FAC">
+                            <color key="tintColor" red="0.80050617459999995" green="0.23345559839999999" blue="0.23070770500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="deletTable" destination="IeZ-ps-3GN" id="c4A-42-nPJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUn-9X-QOl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.9465648854962" y="669.71830985915494"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mj9-R6-tvu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5p-ht-32B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iN4-8e-vLi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1MW-RX-qsj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrT-Vv-SwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+        <!--Spam View Controller-->
+        <scene sceneID="Qry-dc-Zw4">
+            <objects>
+                <viewController storyboardIdentifier="SpamViewController" id="Q0f-a1-sw4" customClass="SpamViewController" customModule="PruebaStefanini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VbN-F5-oCH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iGP-43-Em4">
+                                <rect key="frame" x="10" y="109" width="373" height="743"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-NM-iJJ">
+                                <rect key="frame" x="5" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2zY-9M-XHT"/>
+                                    <constraint firstAttribute="width" constant="45" id="NbY-fr-Hz8"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Q0f-a1-sw4" eventType="touchUpInside" id="KKO-aR-ZRb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ssm-EA-mkW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iGP-43-Em4" firstAttribute="trailing" secondItem="Ssm-EA-mkW" secondAttribute="trailing" constant="-10" id="0qs-zc-Ecs"/>
+                            <constraint firstItem="2pT-NM-iJJ" firstAttribute="leading" secondItem="Ssm-EA-mkW" secondAttribute="leading" constant="5" id="1kd-x2-nT4"/>
+                            <constraint firstItem="iGP-43-Em4" firstAttribute="leading" secondItem="Ssm-EA-mkW" secondAttribute="leading" constant="10" id="Cxt-tx-c12"/>
+                            <constraint firstItem="iGP-43-Em4" firstAttribute="top" secondItem="Ssm-EA-mkW" secondAttribute="top" constant="50" id="ra0-m0-1nM"/>
+                            <constraint firstItem="2pT-NM-iJJ" firstAttribute="top" secondItem="Ssm-EA-mkW" secondAttribute="top" constant="5" id="tan-Yt-prx"/>
+                            <constraint firstAttribute="bottom" secondItem="iGP-43-Em4" secondAttribute="bottom" id="yQI-RN-lHI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spamTable" destination="iGP-43-Em4" id="afO-Zl-Yo7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Wa-rp-GQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.9465648854962" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -13,6 +13,17 @@
 		898FAB202A72F01B00AE75B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898FAB1E2A72F01B00AE75B3 /* Main.storyboard */; };
 		898FAB222A72F01C00AE75B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FAB212A72F01C00AE75B3 /* Assets.xcassets */; };
 		898FAB252A72F01C00AE75B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898FAB232A72F01C00AE75B3 /* LaunchScreen.storyboard */; };
+		898FAB302A72F9E100AE75B3 /* infoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FAB2E2A72F9E100AE75B3 /* infoCell.swift */; };
+		898FAB312A72F9E100AE75B3 /* infoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898FAB2F2A72F9E100AE75B3 /* infoCell.xib */; };
+		898FAB332A733D4400AE75B3 /* email.json in Resources */ = {isa = PBXBuildFile; fileRef = 898FAB322A733D4400AE75B3 /* email.json */; };
+		898FAB352A733EE500AE75B3 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FAB342A733EE500AE75B3 /* Entity.swift */; };
+		89AD0E492A7464DC007B501D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 89AD0E482A7464DC007B501D /* SideMenu */; };
+		89AD0E4B2A7467A3007B501D /* PapeleraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD0E4A2A7467A3007B501D /* PapeleraViewController.swift */; };
+		89AD0E502A782C83007B501D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 89AD0E4F2A782C83007B501D /* Realm */; };
+		89AD0E522A782C83007B501D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 89AD0E512A782C83007B501D /* RealmSwift */; };
+		89AD0E542A782D17007B501D /* DBManagerEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD0E532A782D17007B501D /* DBManagerEmail.swift */; };
+		89AD0E562A7863C6007B501D /* DestacadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD0E552A7863C6007B501D /* DestacadosViewController.swift */; };
+		89AD0E582A7863E8007B501D /* SpamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD0E572A7863E8007B501D /* SpamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,14 @@
 		898FAB212A72F01C00AE75B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898FAB242A72F01C00AE75B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		898FAB262A72F01C00AE75B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		898FAB2E2A72F9E100AE75B3 /* infoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCell.swift; sourceTree = "<group>"; };
+		898FAB2F2A72F9E100AE75B3 /* infoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = infoCell.xib; sourceTree = "<group>"; };
+		898FAB322A733D4400AE75B3 /* email.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = email.json; sourceTree = "<group>"; };
+		898FAB342A733EE500AE75B3 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		89AD0E4A2A7467A3007B501D /* PapeleraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapeleraViewController.swift; sourceTree = "<group>"; };
+		89AD0E532A782D17007B501D /* DBManagerEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManagerEmail.swift; sourceTree = "<group>"; };
+		89AD0E552A7863C6007B501D /* DestacadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestacadosViewController.swift; sourceTree = "<group>"; };
+		89AD0E572A7863E8007B501D /* SpamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AD0E522A782C83007B501D /* RealmSwift in Frameworks */,
+				89AD0E502A782C83007B501D /* Realm in Frameworks */,
+				89AD0E492A7464DC007B501D /* SideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +78,8 @@
 		898FAB172A72F01B00AE75B3 /* PruebaStefanini */ = {
 			isa = PBXGroup;
 			children = (
+				898FAB322A733D4400AE75B3 /* email.json */,
+				898FAB342A733EE500AE75B3 /* Entity.swift */,
 				898FAB182A72F01B00AE75B3 /* AppDelegate.swift */,
 				898FAB1A2A72F01B00AE75B3 /* SceneDelegate.swift */,
 				898FAB1C2A72F01B00AE75B3 /* ViewController.swift */,
@@ -63,6 +87,12 @@
 				898FAB212A72F01C00AE75B3 /* Assets.xcassets */,
 				898FAB232A72F01C00AE75B3 /* LaunchScreen.storyboard */,
 				898FAB262A72F01C00AE75B3 /* Info.plist */,
+				898FAB2E2A72F9E100AE75B3 /* infoCell.swift */,
+				898FAB2F2A72F9E100AE75B3 /* infoCell.xib */,
+				89AD0E4A2A7467A3007B501D /* PapeleraViewController.swift */,
+				89AD0E552A7863C6007B501D /* DestacadosViewController.swift */,
+				89AD0E572A7863E8007B501D /* SpamViewController.swift */,
+				89AD0E532A782D17007B501D /* DBManagerEmail.swift */,
 			);
 			path = PruebaStefanini;
 			sourceTree = "<group>";
@@ -83,6 +113,11 @@
 			dependencies = (
 			);
 			name = PruebaStefanini;
+			packageProductDependencies = (
+				89AD0E482A7464DC007B501D /* SideMenu */,
+				89AD0E4F2A782C83007B501D /* Realm */,
+				89AD0E512A782C83007B501D /* RealmSwift */,
+			);
 			productName = PruebaStefanini;
 			productReference = 898FAB152A72F01B00AE75B3 /* PruebaStefanini.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,10 @@
 				Base,
 			);
 			mainGroup = 898FAB0C2A72F01B00AE75B3;
+			packageReferences = (
+				89AD0E472A7464DC007B501D /* XCRemoteSwiftPackageReference "SideMenu" */,
+				89AD0E4E2A782C83007B501D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 898FAB162A72F01B00AE75B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				898FAB252A72F01C00AE75B3 /* LaunchScreen.storyboard in Resources */,
+				898FAB312A72F9E100AE75B3 /* infoCell.xib in Resources */,
+				898FAB332A733D4400AE75B3 /* email.json in Resources */,
 				898FAB222A72F01C00AE75B3 /* Assets.xcassets in Resources */,
 				898FAB202A72F01B00AE75B3 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				898FAB1D2A72F01B00AE75B3 /* ViewController.swift in Sources */,
+				898FAB352A733EE500AE75B3 /* Entity.swift in Sources */,
+				89AD0E4B2A7467A3007B501D /* PapeleraViewController.swift in Sources */,
+				89AD0E582A7863E8007B501D /* SpamViewController.swift in Sources */,
+				89AD0E562A7863C6007B501D /* DestacadosViewController.swift in Sources */,
+				898FAB302A72F9E100AE75B3 /* infoCell.swift in Sources */,
+				89AD0E542A782D17007B501D /* DBManagerEmail.swift in Sources */,
 				898FAB192A72F01B00AE75B3 /* AppDelegate.swift in Sources */,
 				898FAB1B2A72F01B00AE75B3 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +405,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89AD0E472A7464DC007B501D /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		89AD0E4E2A782C83007B501D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89AD0E482A7464DC007B501D /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AD0E472A7464DC007B501D /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		89AD0E4F2A782C83007B501D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AD0E4E2A782C83007B501D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		89AD0E512A782C83007B501D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89AD0E4E2A782C83007B501D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 898FAB0D2A72F01B00AE75B3 /* Project object */;
 }
